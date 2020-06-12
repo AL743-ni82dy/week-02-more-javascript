@@ -24,6 +24,12 @@
             fuelType: 'diesel'
         };
 
+        let smallTruck = {
+            engineSize: 6,
+            displacement: 4,
+            fuelType: 'regular'
+        };
+
         function getEfficiencyRating (vehicle) {
             let rating = 0;
 /*
@@ -68,11 +74,16 @@
             return rating;
         }
 
+        let vehicle = smallCar;
+        let something = smallCar;
+
         //send a variable value into the function
         // expect a 9
         let smallCarRating = getEfficiencyRating(smallCar);
 
-        console.log(smallCarRating)
+        let smallTruckRating = getEfficiencyRating(smallTruck);
+
+        console.log({smallCarRating, smallTruckRating});
 
     </script>
 
